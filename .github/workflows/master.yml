@@ -22,5 +22,6 @@ jobs:
       - uses: actions/setup-node@v1
 
       - run: yarn
+      - run: (cd test-cases && yarn)
       - run: yarn test:ci
       - run: yarn release
