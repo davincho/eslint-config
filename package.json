@@ -1,21 +1,29 @@
 {
   "name": "@dvch/eslint-config",
-  "main": "index.js",
+  "version": "1.0.0",
+  "files": [
+    "react.json",
+    "typescript.json",
+    "javascript.json"
+  ],
   "repository": "https://github.com/davincho/eslint-config.git",
-  "author": "David Madner <david.madner@gmail.at>",
+  "author": "David Madner <david.madner@gmail.com>",
   "license": "MIT",
+  "private": false,
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.17.0",
     "@typescript-eslint/parser": "^2.17.0",
-    "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prefer-arrow": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^4.0.2",
-    "prettier": "^2.0.5",
-    "typescript": "^3.7.5"
+    "eslint-plugin-react-hooks": "^4.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^3.7.5",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5"
   },
   "devDependencies": {
     "@types/jest": "^25.2.2",
@@ -23,7 +31,10 @@
     "jest": "^26.0.1",
     "jest-in-case": "^1.0.2",
     "semantic-release": "^17.0.7",
-    "ts-jest": "^26.0.0"
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.7.5",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5"
   },
   "scripts": {
     "test": "jest --watch",
