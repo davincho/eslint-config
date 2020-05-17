@@ -1,5 +1,5 @@
 {
-  "name": "@dvch/eslint-config",
+  "name": "@dvnch/eslint-config",
   "publishConfig": {
     "access": "public"
   },
