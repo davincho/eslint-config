@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config",
+  "name": "@dvch/eslint-config",
   "main": "index.js",
   "repository": "git@github.com:davincho/eslint-config.git",
   "author": "David Madner <david@tourradar.com>",
