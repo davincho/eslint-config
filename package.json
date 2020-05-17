@@ -1,6 +1,9 @@
 {
   "name": "@dvch/eslint-config",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "react.json",
     "typescript.json",
