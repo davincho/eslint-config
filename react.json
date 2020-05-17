@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "plugins": ["react-hooks", "react"],
+  "extends": ["./typescript.json", "plugin:react/recommended"],
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "warn",
+    "react/no-deprecated": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["*.test.jsx", "*.test.tsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "warn"
+      }
+    }
+  ]
+}

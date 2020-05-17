@@ -1,0 +1,91 @@
+{
+  "root": true,
+
+  "plugins": ["prettier", "prefer-arrow", "import"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+
+  "rules": {
+    "object-shorthand": "error",
+    "spaced-comment": "warn",
+    "radix": "error",
+    "quote-props": "off",
+    "no-var": "error",
+
+    "no-unused-expressions": "error",
+    "no-underscore-dangle": "warn",
+    "no-undef-init": "error",
+    "no-throw-literal": "error",
+
+    "no-empty-pattern": "warn",
+    "arrow-parens": ["off", "as-needed"],
+    "one-var": ["error", "never"],
+    "no-shadow": [
+      "warn",
+      {
+        "hoist": "all"
+      }
+    ],
+    "camelcase": "warn",
+    "no-template-curly-in-string": "error",
+    "prefer-const": "error",
+    "prefer-object-spread": "error",
+    "no-console": "error",
+    "no-duplicate-imports": "error",
+    "no-eval": "error",
+    "no-extra-bind": "error",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-return-await": "error",
+    "no-sequences": "error",
+    "no-invalid-this": "off",
+    "no-bitwise": "warn",
+    "no-caller": "error",
+    "no-unused-vars": "off",
+    "max-classes-per-file": ["warn", 1],
+
+    "curly": "error",
+    "dot-notation": "error",
+    "eol-last": "off",
+    "eqeqeq": ["error", "smart"],
+    "guard-for-in": "error",
+
+    "arrow-body-style": "off",
+
+    "prettier/prettier": "error",
+
+    "prefer-arrow/prefer-arrow-functions": "warn",
+
+    "import/first": "error",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}

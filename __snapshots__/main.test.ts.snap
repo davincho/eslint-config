@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test files Correct JS file 1`] = `
+Object {
+  outout: ,TAP version 13
+1..1
+ok 1 - ./test-cases/correct.js
+
+,,
+  stderr: ,
+}
+`;
+
+exports[`Test files Correct TS file 1`] = `
+Object {
+  outout: ,TAP version 13
+1..1
+ok 1 - ./test-cases/correct.ts
+
+,,
+  stderr: ,
+}
+`;
+
+exports[`Test files Correct TSX file 1`] = `
+Object {
+  outout: ,TAP version 13
+1..1
+ok 1 - ./test-cases/correct.tsx
+
+,,
+  stderr: ,
+}
+`;
+
+exports[`Test files Incorrect JS file 1`] = `
+Object {
+  outout: ,TAP version 13
+1..1
+not ok 1 - ./test-cases/incorrect.js
+  ---
+  message: '''t'' is assigned a value but never used.'
+  severity: error
+  data:
+    line: 2
+    column: 7
+    ruleId: '@typescript-eslint/no-unused-vars'
+  messages:
+    - message: Unexpected console statement.
+      severity: error
+      data:
+        line: 5
+        column: 1
+        ruleId: no-console
+  ...
+
+,,
+  stderr: ,
+}
+`;
+
+exports[`Test files Incorrect TS file 1`] = `
+Object {
+  outout: ,TAP version 13
+1..1
+ok 1 - ./test-cases/incorrect.ts
+  ---
+  message: 'An empty interface is equivalent to \`{}\`.'
+  severity: warning
+  data:
+    line: 2
+    column: 11
+    ruleId: '@typescript-eslint/no-empty-interface'
+  ...
+
+,,
+  stderr: ,
+}
+`;
+
+exports[`Test files Incorrect TSX file 1`] = `
+Object {
+  outout: ,TAP version 13
+1..1
+not ok 1 - ./test-cases/incorrect.tsx
+  ---
+  message: There should be at least one empty line between import groups
+  severity: error
+  data:
+    line: 1
+    column: 1
+    ruleId: import/order
+  messages:
+    - message: '''lodash'' is defined but never used.'
+      severity: error
+      data:
+        line: 1
+        column: 8
+        ruleId: '@typescript-eslint/no-unused-vars'
+    - message: '''testFunction'' is defined but never used.'
+      severity: error
+      data:
+        line: 2
+        column: 10
+        ruleId: '@typescript-eslint/no-unused-vars'
+    - message: '\`react\` import should occur before import of \`lodash\`'
+      severity: error
+      data:
+        line: 5
+        column: 1
+        ruleId: import/order
+    - message: '''TestComponent'' is assigned a value but never used.'
+      severity: error
+      data:
+        line: 8
+        column: 7
+        ruleId: '@typescript-eslint/no-unused-vars'
+  ...
+
+,,
+  stderr: ,
+}
+`;

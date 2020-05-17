@@ -6,23 +6,21 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on:  ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
 
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-
-    - run: echo Hello, world!
-    - run: yarn --version
-
-    
+      - run: yarn
+      - run: yarn test
+      - run: yarn release
