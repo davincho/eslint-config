@@ -1,3 +1,5 @@
+![CI](https://github.com/davincho/eslint-config/workflows/CI/badge.svg)
+
 # Purpose
 
 This package contains an opinionated ESLint configuration for vanilla JS, Typescript and TSX for React.
