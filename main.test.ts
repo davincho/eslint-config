@@ -1,10 +1,8 @@
-import * as cases from 'jest-in-case';
+import cases from 'jest-in-case';
 
 const spawn = require('cross-spawn');
 
 const cwd = __dirname;
-
-const t = 'd';
 
 expect.addSnapshotSerializer({
   test: (val) => typeof val === 'string',
