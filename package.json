@@ -1,8 +1,8 @@
 {
   "name": "@dvch/eslint-config",
   "main": "index.js",
-  "repository": "git@github.com:davincho/eslint-config.git",
-  "author": "David Madner <david@tourradar.com>",
+  "repository": "https://github.com/davincho/eslint-config.git",
+  "author": "David Madner <david.madner@gmail.at>",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.17.0",
