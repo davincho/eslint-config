@@ -63,14 +63,21 @@ exports[`Test files Incorrect TS file 1`] = `
 Object {
   outout: ,TAP version 13
 1..1
-ok 1 - ./test-cases/incorrect.ts
+not ok 1 - ./test-cases/incorrect.ts
   ---
-  message: 'An empty interface is equivalent to \`{}\`.'
+  message: An empty interface is equivalent to \`{}\`.
   severity: warning
   data:
     line: 2
     column: 11
     ruleId: '@typescript-eslint/no-empty-interface'
+  messages:
+    - message: '''Props'' is defined but never used.'
+      severity: error
+      data:
+        line: 2
+        column: 11
+        ruleId: '@typescript-eslint/no-unused-vars'
   ...
 
 ,,
