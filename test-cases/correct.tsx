@@ -1,5 +1,3 @@
-import React from 'react';
-
 import lodash from 'lodash';
 
 import { testFunction } from './correct';

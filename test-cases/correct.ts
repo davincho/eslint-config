@@ -3,6 +3,6 @@ interface Props {
   lastName: string;
 }
 
-export const testFunction = (props: Props) => {
-  return props.name;
+export const testFunction = (props?: Props) => {
+  return props?.name;
 };

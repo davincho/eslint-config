@@ -116,6 +116,12 @@ not ok 1 - ./test-cases/incorrect.tsx
         line: 5
         column: 1
         ruleId: import/order
+    - message: '''React'' is defined but never used.'
+      severity: error
+      data:
+        line: 5
+        column: 8
+        ruleId: '@typescript-eslint/no-unused-vars'
     - message: '''TestComponent'' is assigned a value but never used.'
       severity: error
       data:

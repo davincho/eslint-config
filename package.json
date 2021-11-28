@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
     "cross-spawn": "^7.0.3",
     "eslint": "^8.3.0",
     "jest": "^27.3.1",

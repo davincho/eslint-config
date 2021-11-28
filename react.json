@@ -1,7 +1,7 @@
 {
   "root": true,
   "plugins": ["react-hooks", "react"],
-  "extends": ["./typescript.json", "plugin:react/recommended"],
+  "extends": ["./typescript.json", "plugin:react/recommended", "plugin:react/jsx-runtime"],
 
   "settings": {
     "react": {
