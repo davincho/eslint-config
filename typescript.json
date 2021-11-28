@@ -1,15 +1,15 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "./javascript.json",
     "plugin:import/typescript",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-definitions": "error",
@@ -17,16 +17,27 @@
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { "argsIgnorePattern": "^_", "ignoreRestSiblings": true }
+      {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
     ],
-    "@typescript-eslint/array-type": ["error", { "array-simple": true }],
+    "@typescript-eslint/array-type": [
+      "error",
+      {
+        "array-simple": true
+      }
+    ],
     "@typescript-eslint/no-empty-function": "warn",
     "@typescript-eslint/no-empty-interface": "warn",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/type-annotation-spacing": "off",
     "@typescript-eslint/unified-signatures": "error",
-
+    "no-duplicate-imports": "off",
+    "@typescript-eslint/no-duplicate-imports": [
+      "error"
+    ],
     "@typescript-eslint/member-delimiter-style": [
       "off",
       {
@@ -43,7 +54,11 @@
   },
   "overrides": [
     {
-      "files": ["__tests__/**/*", "*.test.js", "*.test.ts"],
+      "files": [
+        "__tests__/**/*",
+        "*.test.js",
+        "*.test.ts"
+      ],
       "rules": {
         "@typescript-eslint/no-unused-vars": "warn"
       }
