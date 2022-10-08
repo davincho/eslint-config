@@ -1,7 +1,11 @@
 {
   "root": true,
   "plugins": ["react-hooks", "react"],
-  "extends": ["./typescript.json", "plugin:react/recommended", "plugin:react/jsx-runtime"],
+  "extends": [
+    "./typescript.json",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
 
   "settings": {
     "react": {
@@ -16,7 +20,8 @@
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
     "react/display-name": "warn",
-    "react/no-deprecated": "warn"
+    "react/no-deprecated": "warn",
+    "unicorn/filename-case": "off"
   },
   "overrides": [
     {

@@ -1,9 +1,7 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "./javascript.json",
     "plugin:import/typescript",
@@ -35,9 +33,7 @@
     "@typescript-eslint/type-annotation-spacing": "off",
     "@typescript-eslint/unified-signatures": "error",
     "no-duplicate-imports": "off",
-    "@typescript-eslint/no-duplicate-imports": [
-      "error"
-    ],
+    "@typescript-eslint/no-duplicate-imports": ["error"],
     "@typescript-eslint/member-delimiter-style": [
       "off",
       {
@@ -54,11 +50,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "__tests__/**/*",
-        "*.test.js",
-        "*.test.ts"
-      ],
+      "files": ["__tests__/**/*", "*.test.js", "*.test.ts"],
       "rules": {
         "@typescript-eslint/no-unused-vars": "warn"
       }
