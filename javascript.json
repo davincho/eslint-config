@@ -14,7 +14,8 @@
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:unicorn/recommended"
   ],
 
   "rules": {
@@ -91,6 +92,7 @@
           "caseInsensitive": true
         }
       }
-    ]
+    ],
+    "unicorn/prevent-abbreviations": "off"
   }
 }
