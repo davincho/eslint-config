@@ -1,8 +1,7 @@
 import spawn from 'cross-spawn';
-import cases from 'jest-in-case';
+import { expect, describe, it } from 'vitest';
 
-// eslint-disable-next-line unicorn/prefer-module
-const cwd = __dirname;
+const cwd = import.meta.url;
 
 expect.addSnapshotSerializer({
   test: (val) => typeof val === 'string',
@@ -12,38 +11,42 @@ expect.addSnapshotSerializer({
   }
 });
 
-cases(
-  'Test files',
-  ({ file }) => {
-    const { output, stderr } = spawn.sync('./node_modules/.bin/eslint', [
-      '--format',
-      'tap',
-      file
-    ]);
-
-    expect({
-      outout: output.toString(),
-      stderr: stderr.toString()
-    }).toMatchSnapshot();
+const definitions = {
+  'Incorrect JS file': {
+    file: 'test-cases/incorrect.js'
   },
-  {
-    'Incorrect JS file': {
-      file: 'test-cases/incorrect.js'
-    },
-    'Correct JS file': {
-      file: 'test-cases/correct.js'
-    },
-    'Incorrect TS file': {
-      file: 'test-cases/incorrect.ts'
-    },
-    'Correct TS file': {
-      file: 'test-cases/correct.ts'
-    },
-    'Incorrect TSX file': {
-      file: 'test-cases/incorrect.tsx'
-    },
-    'Correct TSX file': {
-      file: 'test-cases/correct.tsx'
-    }
+  'Correct JS file': {
+    file: 'test-cases/correct.js'
+  },
+  'Incorrect TS file': {
+    file: 'test-cases/incorrect.ts'
+  },
+  'Correct TS file': {
+    file: 'test-cases/correct.ts'
+  },
+  'Incorrect TSX file': {
+    file: 'test-cases/incorrect.tsx'
+  },
+  'Correct TSX file': {
+    file: 'test-cases/correct.tsx'
   }
-);
+};
+
+describe('Test files', () => {
+  for (const [key, value] of Object.entries(definitions)) {
+    it(key, () => {
+      const { file } = value;
+
+      const { output, stderr } = spawn.sync('./node_modules/.bin/eslint', [
+        '--format',
+        'tap',
+        file
+      ]);
+
+      expect({
+        outout: output.toString(),
+        stderr: stderr.toString()
+      }).toMatchSnapshot();
+    });
+  }
+});
