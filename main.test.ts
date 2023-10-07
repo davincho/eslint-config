@@ -1,7 +1,10 @@
+import path from 'node:path';
+import url from 'node:url';
+
 import spawn from 'cross-spawn';
 import { expect, describe, it } from 'vitest';
 
-const cwd = import.meta.url;
+const cwd = path.dirname(url.fileURLToPath(import.meta.url));
 
 expect.addSnapshotSerializer({
   test: (val) => typeof val === 'string',
