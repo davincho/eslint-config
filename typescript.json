@@ -20,12 +20,7 @@
         "ignoreRestSiblings": true
       }
     ],
-    "@typescript-eslint/array-type": [
-      "error",
-      {
-        "array-simple": true
-      }
-    ],
+    "@typescript-eslint/array-type": ["error", { "default": "array" }],
     "@typescript-eslint/no-empty-function": "warn",
     "@typescript-eslint/no-empty-interface": "warn",
     "@typescript-eslint/prefer-for-of": "error",
@@ -33,7 +28,7 @@
     "@typescript-eslint/type-annotation-spacing": "off",
     "@typescript-eslint/unified-signatures": "error",
     "no-duplicate-imports": "off",
-    "@typescript-eslint/no-duplicate-imports": ["error"],
+    "import/no-duplicates": ["error"],
     "@typescript-eslint/member-delimiter-style": [
       "off",
       {

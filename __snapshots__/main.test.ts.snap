@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test files Correct JS file 1`] = `
-Object {
+{
   outout: ,TAP version 13
 1..1
 ok 1 - ./test-cases/correct.js
@@ -12,7 +12,7 @@ ok 1 - ./test-cases/correct.js
 `;
 
 exports[`Test files Correct TS file 1`] = `
-Object {
+{
   outout: ,TAP version 13
 1..1
 ok 1 - ./test-cases/correct.ts
@@ -23,7 +23,7 @@ ok 1 - ./test-cases/correct.ts
 `;
 
 exports[`Test files Correct TSX file 1`] = `
-Object {
+{
   outout: ,TAP version 13
 1..1
 ok 1 - ./test-cases/correct.tsx
@@ -34,7 +34,7 @@ ok 1 - ./test-cases/correct.tsx
 `;
 
 exports[`Test files Incorrect JS file 1`] = `
-Object {
+{
   outout: ,TAP version 13
 1..1
 not ok 1 - ./test-cases/incorrect.js
@@ -60,7 +60,7 @@ not ok 1 - ./test-cases/incorrect.js
 `;
 
 exports[`Test files Incorrect TS file 1`] = `
-Object {
+{
   outout: ,TAP version 13
 1..1
 not ok 1 - ./test-cases/incorrect.ts
@@ -86,7 +86,7 @@ not ok 1 - ./test-cases/incorrect.ts
 `;
 
 exports[`Test files Incorrect TSX file 1`] = `
-Object {
+{
   outout: ,TAP version 13
 1..1
 not ok 1 - ./test-cases/incorrect.tsx
