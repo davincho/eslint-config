@@ -1,7 +1,7 @@
+import spawn from 'cross-spawn';
 import cases from 'jest-in-case';
 
-const spawn = require('cross-spawn');
-
+// eslint-disable-next-line unicorn/prefer-module
 const cwd = __dirname;
 
 expect.addSnapshotSerializer({
