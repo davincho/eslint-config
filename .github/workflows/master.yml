@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '17'
       - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
 
       - run: pnpm install
       - run: (cd test-cases && pnpm install)
